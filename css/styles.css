@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.bck {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.bck::after {
+  content: "";
+  background: url(../coffee.jpg);
+  opacity: 0.3;
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 1em;
+  padding-top: 2.5em;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.container {
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  background-color: #f9f4ee;
+  box-shadow: grey 2.4px 2.4px 3.2px;
+}
+
+.container .left-box {
+  width: 50%;
+  height: 100%;
+  background: url(../coffee.jpg);
+  background-size: cover;
+}
+
+.container .right-box {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5.25em;
+}
+
+.form-inputs {
+  display: block;
+  font-size: 1.05rem;
+}
+
+label {
+  margin-bottom: 0.35em;
+  letter-spacing: 0.15em;
+}
+
+input {
+  border-radius: 0.25em;
+  margin-bottom: 1.5em;
+  background-color: #f9f4ee;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  border: none;
+  border-bottom: 0.25em solid #3d3d3d;
+  height: 2.5em;
+  width: 15em;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: none;
+  border-bottom: 0.25em solid #b8701b;
+  height: 2.5em;
+}
+
+/* CSS */
+.button-54 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2f2f2e;
+  cursor: pointer;
+  margin-top: 0.8em;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+a {
+  display: block;
+  margin-top: 1.15em;
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
